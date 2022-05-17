@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+</head>
+<style>
+        body{
+            background-color: #84f7f2;
+        }
+        .w{
+            width: 900px;
+            height: 600px;
+            border: 8px solid #EEEEEE;
+            background-color: white;
+            margin: auto;
+        }
+        .center{
+            text-align: center;
+            font-size: 50px;
+			color:rgb(33, 199, 210) ;
+        }
+        .left{
+            width: 100px;
+            height: 45px;
+            text-align: bottom;
+            /* border: 1px solid #0f0f0f; */
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        #loginname,#password1{ 
+            padding-left: 10px;       
+            width: 200px;
+            height: 25px;
+            border: 2px solid #373737;
+            border-radius: 5px;
+            background-color: #e9e9e9;	
+            padding: 10px;
+            font-size: 20px;
+        }
+        .zhuce1,.zhuce2{
+            text-align: center;
+        }
+        .zhuce1{
+            padding-top: 30px;
+        }
+        .register{
+            width: 120px;
+            height: 40px;
+            margin-top: 30px;
+            margin-right: 90px;
+            background-color: #45c7ff;
+            border: 1px solid #000000;
+            font-size: 20px;
+        }
+</style>
+<body>
+    <div class="w">
+        <form name="form1" method="post" action="">
+            <!-- <form name="form1"> -->
+            <h2 class="center">用户登录</h2>
+            <table align="center" id="table1">
+                <tr>
+                    <td class="left">用户名：</td>
+                    <td class="right"><input type="text" id="loginname" name="login_name" placeholder="您的用户名" required></td>
+                </tr>
+                <tr>
+                    <td class="left">密&nbsp;&nbsp;&nbsp;码：</td>
+                    <td class="right"><input type="password" id="password1" name="password" placeholder="密码" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th><button class="register" type="submit" name="submit" value="登录" >登 录</button></th>
+                </tr>
+            </table>
+
+        </form>
+        <div>
+            <p class="zhuce1"><a href="">没有账户，注册</a></p>
+            <p class="zhuce2"><a href="https://github.com/login/oauth/authorize?client_id=7e015d8ce32370079895&redirect_uri=http://localhost:8080/oauth/redirect">使用github账号登录</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
